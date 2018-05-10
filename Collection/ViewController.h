@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@property (nonatomic, retain)UICollectionView *collectionView;
+@property (nonatomic, retain)UICollectionView *customLayout;
+@property (nonatomic, retain)UICollectionView *section0Array;
+@property (nonatomic, strong)UILabel *botlabel;
 
 @end
 
